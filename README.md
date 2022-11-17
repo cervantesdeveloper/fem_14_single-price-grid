@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](https://github.com/cervantesdeveloper/fem_14_single-price-grid.git)
-- Live Site URL: [Site](https://app.netlify.com/sites/fem-14/overview)
+- Live Site URL: [Site](https://fem-14.netlify.app/)
 
 ## My process
 
