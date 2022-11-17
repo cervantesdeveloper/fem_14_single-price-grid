@@ -1,0 +1,162 @@
+/* ****** Custom Properties **** */
+
+:root{
+    /* == colors == */
+    --color-cta: rgb(192, 223, 52);
+    --color-primary: rgb(42, 178, 175);
+    --color-secondary: rgb(229, 239, 245);
+    --color-tertiary: rgb(152, 166, 189);
+    --color-primaryClear: rgb(74, 190, 189);
+
+    /* == fonts == */
+
+    --font-main: 'Karla', sans-serif;
+}
+
+/* ***** Reset ***** */
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a{text-decoration: none;}
+
+body{
+    background-color: var(--color-secondary);
+    
+}
+
+h1{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    line-height: 1.66;
+    margin-bottom: .75rem;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/* ***** Utilities ***** */
+.btn{
+    display: block;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    line-height: 3;
+    text-align: center;
+    border-radius: .25rem;
+    cursor: pointer;
+}
+
+.cta{
+    background-color: var(--color-cta);
+    color: #fff;
+}
+
+
+
+/* ***** Site syles ***** */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+}
+
+.card-pricing{
+    box-shadow: 0 .3125rem 1.5rem .5rem rgba(0, 0, 0, .075);
+    border-radius: .25rem;
+}
+
+.card-pricing__head{
+    padding: 1.5rem 1.5rem 2rem;
+    border-radius: .25rem .25rem 0 0;
+    background-color: #fff;
+}
+
+.card-pricing__head h2{
+    font-size: 1rem;
+    line-height: 1.375;
+    margin-bottom: .75rem;
+    font-weight: 700;
+    color: var(--color-cta);
+}
+
+.card-pricing__head p {
+    font-size: .875rem;
+    color: var(--color-tertiary);
+    line-height: 1.625rem;
+    font-weight: 400;
+}
+
+.card-pricing__body{
+    color: #fff;
+}
+
+.card-pricing__body h2{
+    font-size: 1rem;
+    margin-bottom: .75rem;
+    line-height: 1.625rem;
+}
+
+.card-pricing__offer{
+    background-color: var(--color-primary);
+    padding: 1.5rem;
+}
+
+.card-pricing__offer p:first-of-type {
+    height: 2.625rem;
+    display: flex;
+    align-items: center;
+    font-size: .875rem;
+}
+
+.card-pricing__offer p:last-of-type{
+    line-height: 1.875rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-pricing__offer span{
+    font-size: 1.5rem;
+    margin-right: .875rem;
+    color: #fff;
+}
+
+.card-pricing__details{
+    background-color: var(--color-primaryClear);
+    padding: 1.5rem;
+    border-radius: 0 0 .25rem .25rem;
+}
+
+.card-pricing__details li{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+}
+
+.attribution { font-size: .75rem; text-align: center; }
+.attribution a { color: var(--color-primary)}
+
+
