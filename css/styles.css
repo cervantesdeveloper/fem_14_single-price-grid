@@ -39,8 +39,8 @@ body{
 h1{
     color: var(--color-primary);
     font-size: 1.5rem;
-    line-height: 1.66;
-    margin-bottom: .75rem;
+    line-height: 1.5;
+    margin-bottom: .625rem;
 }
 
 ul{
@@ -75,11 +75,12 @@ main{
     justify-content: center;
     align-items: center;
     padding: 2rem 1.5rem;
+    min-height: 100vh;
 }
 
 .card-pricing{
     box-shadow: 0 .3125rem 1.5rem .5rem rgba(0, 0, 0, .075);
-    border-radius: .25rem;
+    max-width: 40rem;
 }
 
 .card-pricing__head{
@@ -146,6 +147,45 @@ main{
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.5;
+}
+
+@media (min-width: 48rem) {
+    .card-pricing__head{
+        padding: 2.375rem 2.55rem;
+        border-radius: .5rem .5rem 0 0;
+    }
+
+    .card-pricing__head h2{
+        line-height: 2.625;
+        margin-bottom: 0;
+    }
+
+    .card-pricing__head p{
+        font-size: 1rem;
+    }
+
+    .card-pricing__body{
+        display: flex;
+    }
+
+    .card-pricing__body > *{
+        width: 50%;
+    }
+
+    .card-pricing__offer{
+        padding: 2.375rem 2.5rem;
+        border-radius: 0 0 0 .5rem;
+    }
+
+    .card-pricing__offer p:last-of-type{
+        line-height: 2;
+        font-size: .875rem;
+    }
+
+    .card-pricing__details{
+        padding: 2.375rem 2.5rem;
+        border-radius: 0 0 .5rem 0;
+    }
 }
 
 footer{
